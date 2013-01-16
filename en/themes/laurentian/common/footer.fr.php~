@@ -1,0 +1,25 @@
+        </div><!-- end content -->
+
+        <div id="footer">
+		<div id="footertop">
+			<?php img($file, $dir = 'images'); ?>
+			<img src="<?php echo img('LULOGO.JPG'); ?>" width="950" height="150" />
+		</div><!-- end footertop -->
+	    
+	    	<div id="footer-bottomleft">
+                	<?php if ((get_theme_option('Display Footer Copyright') == 1) && $copyright = settings('copyright')): ?>
+                    		<p><?php echo $copyright; ?></p>
+                	<?php endif; ?>
+                	<p style="text-align:left;"><?php echo __('Propulsé par: <a href="http://omeka.org">Omeka</a>.'); ?></p>
+            	</div><!-- end footer-bottomleft -->
+
+		<div id="footer-bottomright">
+			<p style="text-align:right;"><?php echo __('Créé par: Miia et Emily'); ?></p>
+		</div><!-- end footer-bottomright -->
+		
+            <?php plugin_footer(); ?>
+
+        </div><!-- end footer -->
+    </div><!-- end wrap -->
+</body>
+</html>
