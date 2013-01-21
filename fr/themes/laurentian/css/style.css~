@@ -109,13 +109,13 @@ body {
     /* -- Misc Block elements -- */
     p, ol, dl{
 	font-size:20.8px; 
-	line-height:16px; 
+	line-height:20px; 
 	margin-bottom:21.33328px;
     }/*End p, ul,ol,dl*/
     ul {
 	display:inline;
 	font-size:15px;
-	padding-bottom:10px;
+	padding-bottom:10px; 
 	padding-top:10px;
     }
     	p.sitetitle {
@@ -127,11 +127,11 @@ body {
 		text-decoration:none;
 	}/*End p.sitetitle a*/
     h1 a, h2 a, h3 a {
-	text-decoration:none;
+	
     }/*End h1 a, h2 a, h3 a*/
     li {
 	display:inline;
-	padding:5px 2px 5px 2px;
+	padding:5px 5px 5px 5px;
     }/*End li*/
 
     /* -- Misc Inline elements -- */
@@ -221,10 +221,10 @@ body {
 	#items_search {float:right;}
 
     /* -- Links -- */
-    a:link {color:black;text-decoration:none;}
-    a:visited {color:black;text-decoration:none;}
-    a:hover {color:blue;text-decoration:none;}
-    a:active {color:default;text-decoration:none;}
+    a:link {color:black;}
+    a:visited {color:black;}
+    a:hover {color:blue;}
+    a:active {color:default;}
 
     .view-items-link {}
 
@@ -345,15 +345,17 @@ body {
 	#header-top {
 		position:top;
 	}
-		#site-title{
+		#site-title a{
 			padding:15px 0 0 15px;
-			font-size:85px;
+			font-size:100px;
 			text-decoration:none;
 		}
 	#header-bottomleft {
 		float:left;
 		font-size:20px;
 	}
+
+	#header-bottomleft a {text-decoration: none;}
 
 	#header-bottomright {
 		float:right;
@@ -369,7 +371,6 @@ body {
     		}/*End #searchwrap*/
 
 			#searchwrap a{
-				text-decoration:none;
 				padding:10px 5px 20px 0;
 				line-height:20px;
 			}/*End searchwrap a*/
@@ -389,7 +390,6 @@ body {
 			}/*End #submit_search*/
 
 			#advanced-search-link a {
-				text-decoration:none;
 				border:none;
 				clear:both;
 				text-align:right;
@@ -500,6 +500,7 @@ body {
 		float:right;
 		width:575px;
 		padding-top:15px;
+		text-align:justify;
 	}
     #exhibit-show {
 	padding: 20px 10px 20px 10px;

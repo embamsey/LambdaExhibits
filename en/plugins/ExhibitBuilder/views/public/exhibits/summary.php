@@ -10,14 +10,14 @@
     <h3><a href="<?php echo exhibit_builder_exhibit_uri(get_current_exhibit(), get_current_exhibit_section()); ?>"><?php echo html_escape(exhibit_section('title')); ?></a></h3>
 	<?php $section = exhibit_section('title'); ?>
 	<?php img($file, $dir = 'images'); ?>
-	<img src="<?php echo img($section . '-coverpage.jpeg'); ?>" width="125" height="175"/>
+	<a href="<?php echo exhibit_builder_exhibit_uri(get_current_exhibit(), get_current_exhibit_section()); ?>"><img src="<?php echo img('thumb.' . $section . '-coverpage.jpeg'); ?>" width="125" height="175"/></a>
 	<?php endif; ?>
 	<?php endwhile; ?>
 </div>
 </div>
 <div id="summarysecondary">
 <h2><?php echo __('Description'); ?></h2>
-<p style="font-size:1.5em;"><?php img($file, $dir = 'images'); echo exhibit('description'); ?></p>
+<p style="font-size:1.5em;"><?php echo exhibit('description'); ?></p>
 </div>
 
 <?php foot(); ?>

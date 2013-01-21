@@ -127,7 +127,6 @@ body {
 		text-decoration:none;
 	}/*End p.sitetitle a*/
     h1 a, h2 a, h3 a {
-	text-decoration:none;
     }/*End h1 a, h2 a, h3 a*/
     li {
 	display:inline;
@@ -221,10 +220,10 @@ body {
 	#items_search {float:right;}
 
     /* -- Links -- */
-    a:link {color:black;text-decoration:none;}
-    a:visited {color:black;text-decoration:none;}
-    a:hover {color:blue;text-decoration:none;}
-    a:active {color:default;text-decoration:none;}
+    a:link {color:black;}
+    a:visited {color:black;}
+    a:hover {color:blue;}
+    a:active {color:default;}
 
     .view-items-link {}
 
@@ -345,15 +344,17 @@ body {
 	#header-top {
 		position:top;
 	}
-		#site-title{
+		#site-title a{
 			padding:15px 0 0 15px;
-			font-size:100px;
+			font-size:75px;
 			text-decoration:none;
 		}
 	#header-bottomleft {
 		float:left;
 		font-size:20px;
 	}
+
+	#header-bottomleft a { text-decoration: none;}
 
 	#header-bottomright {
 		float:right;
@@ -485,7 +486,7 @@ body {
         #primary #submit_search {}
 
     /* Exhibits Pages */
-    #exhibit-nav {
+    #exhibit- anav {
 	font-size:32px;
     }
     #exhibit-summary {

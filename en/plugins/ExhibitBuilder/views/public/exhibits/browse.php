@@ -18,7 +18,12 @@ head(array('title'=>$title, 'bodyid' => 'exhibit', 'bodyclass'=>'browse'));
     		
 		<?php $exhibit = exhibit('title'); ?>
 		<?php img($file, $dir = 'images'); ?>
-		<img src="<?php echo img($exhibit . '-view.jpeg'); ?>" width="125" height="175"/>
+
+		<?php
+			$image_name = img('thumb.' . $exhibit . '-view.jpeg');
+			$image_link = '<img src="' . $image_name . '" width="125" height="175"/>';
+			echo link_to_exhibit($text = $image_link);
+		?>
 		
     		<p class="tags"><?php echo tag_string(get_current_exhibit(), uri('exhibits/browse/tag/')); ?></p>
     	</div>

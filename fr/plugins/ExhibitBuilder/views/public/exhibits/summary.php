@@ -10,7 +10,7 @@
     <h3><a href="<?php echo exhibit_builder_exhibit_uri(get_current_exhibit(), get_current_exhibit_section()); ?>"><?php echo html_escape(exhibit_section('title')); ?></a></h3>
 	<?php $section = exhibit_section('title'); ?>
 	<?php img($file, $dir = 'images'); ?>
-	<img src="<?php echo img($section . '-coverpage.jpeg'); ?>" width="125" height="175"/>
+	<a href="<?php echo exhibit_builder_exhibit_uri(get_current_exhibit(), get_current_exhibit_section()); ?>"><img src="<?php echo img('thumb.' . $section . '-coverpage.jpeg'); ?>" width="125" height="175"/></a>
 	<?php endif; ?>
 	<?php endwhile; ?>
 </div>
